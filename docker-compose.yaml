@@ -33,8 +33,8 @@ services:
     volumes:
       - nextcloud:/var/www/html:z,ro #ro stands for read onyl, wich means this volume is a shared file, but this container can only read its data
     environment: 
-      - VIRTUAL_HOST= cloud.rinscloud.com
-      - LETSENCRYPT_HOST= cloud.rinscloud.com
+      - VIRTUAL_HOST=cloud.rinscloud.com
+      - LETSENCRYPT_HOST=cloud.rinscloud.com
       - LETSENCRYPT_EMAIL=rinramz@outlook.com
     depends_on:
       - app
